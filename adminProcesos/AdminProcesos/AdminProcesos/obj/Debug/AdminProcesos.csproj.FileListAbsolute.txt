@@ -11,3 +11,16 @@ C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\Ad
 C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.Form1.resources
 C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csproj.CopyComplete
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\AdminProcesos.exe.config
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\AdminProcesos.exe
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\AdminProcesos.pdb
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\MetroFramework.dll
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csprojAssemblyReference.cache
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.Form1.resources
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.Properties.Resources.resources
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csproj.GenerateResource.cache
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csproj.CoreCompileInputs.cache
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csproj.CopyComplete
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.exe
+C:\Users\SEBAS\Desktop\UMG\Año3\Semestre2\SISTEMAS OPERATIVOS 1\SimulacionProcesos\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.pdb

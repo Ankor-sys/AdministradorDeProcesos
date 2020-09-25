@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pbRAM = new MetroFramework.Controls.MetroProgressBar();
             this.pbCPU = new MetroFramework.Controls.MetroProgressBar();
             this.lblPorcentajeRAM = new MetroFramework.Controls.MetroLabel();
@@ -57,9 +57,13 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pRAM = new System.Diagnostics.PerformanceCounter();
+            this.pCPU = new System.Diagnostics.PerformanceCounter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProceso)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grafica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCPU)).BeginInit();
             this.SuspendLayout();
             // 
             // pbRAM
@@ -156,18 +160,19 @@
             this.dgvProceso.Location = new System.Drawing.Point(23, 63);
             this.dgvProceso.Name = "dgvProceso";
             this.dgvProceso.ReadOnly = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvProceso.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvProceso.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvProceso.Size = new System.Drawing.Size(659, 413);
             this.dgvProceso.TabIndex = 27;
+            this.dgvProceso.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvProceso_MouseClick);
             // 
             // col1
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.col1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.col1.DefaultCellStyle = dataGridViewCellStyle7;
             this.col1.HeaderText = "# Proceso";
             this.col1.Name = "col1";
             this.col1.ReadOnly = true;
@@ -266,26 +271,26 @@
             // grafica
             // 
             this.grafica.BackColor = System.Drawing.Color.Teal;
-            chartArea3.BackColor = System.Drawing.Color.PowderBlue;
-            chartArea3.Name = "ChartArea1";
-            this.grafica.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.grafica.Legends.Add(legend3);
+            chartArea4.BackColor = System.Drawing.Color.PowderBlue;
+            chartArea4.Name = "ChartArea1";
+            this.grafica.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.grafica.Legends.Add(legend4);
             this.grafica.Location = new System.Drawing.Point(34, 165);
             this.grafica.Name = "grafica";
             this.grafica.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series5.BorderWidth = 3;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "CPU";
-            series6.BorderWidth = 3;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Legend = "Legend1";
-            series6.Name = "RAM";
-            this.grafica.Series.Add(series5);
-            this.grafica.Series.Add(series6);
+            series7.BorderWidth = 3;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.Name = "CPU";
+            series8.BorderWidth = 3;
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.Name = "RAM";
+            this.grafica.Series.Add(series7);
+            this.grafica.Series.Add(series8);
             this.grafica.Size = new System.Drawing.Size(636, 300);
             this.grafica.TabIndex = 34;
             this.grafica.Text = "grafica";
@@ -293,6 +298,7 @@
             // timer1
             // 
             this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // panel2
             // 
@@ -301,6 +307,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(659, 384);
             this.panel2.TabIndex = 35;
+            // 
+            // pRAM
+            // 
+            this.pRAM.CategoryName = "Memory";
+            this.pRAM.CounterName = "% Committed Bytes in Use ";
+            // 
+            // pCPU
+            // 
+            this.pCPU.CategoryName = "Processor";
+            this.pCPU.CounterName = "% Processor Time";
+            this.pCPU.InstanceName = "_Total";
             // 
             // Form1
             // 
@@ -326,6 +343,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grafica)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pRAM)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.pCPU)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,6 +374,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Panel panel2;
+        private System.Diagnostics.PerformanceCounter pRAM;
+        private System.Diagnostics.PerformanceCounter pCPU;
     }
 }
 
