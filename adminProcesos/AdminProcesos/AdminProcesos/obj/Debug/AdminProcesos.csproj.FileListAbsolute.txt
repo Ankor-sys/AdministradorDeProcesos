@@ -1,0 +1,13 @@
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\AdminProcesos.exe.config
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\AdminProcesos.exe
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\AdminProcesos.pdb
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csprojAssemblyReference.cache
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.Properties.Resources.resources
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csproj.GenerateResource.cache
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csproj.CoreCompileInputs.cache
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.exe
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.pdb
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\MetroFramework.dll
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.Form1.resources
+C:\Users\ranbr\Documents\SISTEMAS\SISTEMAS OPERATIVOS\proyecto2\adminProcesos\AdminProcesos\AdminProcesos\obj\Debug\AdminProcesos.csproj.CopyComplete

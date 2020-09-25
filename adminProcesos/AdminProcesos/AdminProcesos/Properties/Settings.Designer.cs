@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Administrador_Procesos.Properties
+namespace AdminProcesos.Properties
 {
 
 
