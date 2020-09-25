@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
@@ -53,6 +54,9 @@
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.btnVer = new System.Windows.Forms.Button();
             this.grafica = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProceso)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grafica)).BeginInit();
@@ -60,19 +64,19 @@
             // 
             // pbRAM
             // 
-            this.pbRAM.Location = new System.Drawing.Point(106, 132);
+            this.pbRAM.Location = new System.Drawing.Point(87, 132);
             this.pbRAM.Name = "pbRAM";
-            this.pbRAM.Size = new System.Drawing.Size(507, 23);
-            this.pbRAM.Style = MetroFramework.MetroColorStyle.Silver;
+            this.pbRAM.Size = new System.Drawing.Size(538, 23);
+            this.pbRAM.Style = MetroFramework.MetroColorStyle.Blue;
             this.pbRAM.TabIndex = 33;
             this.pbRAM.Visible = false;
             // 
             // pbCPU
             // 
-            this.pbCPU.Location = new System.Drawing.Point(106, 103);
+            this.pbCPU.Location = new System.Drawing.Point(87, 103);
             this.pbCPU.Name = "pbCPU";
-            this.pbCPU.Size = new System.Drawing.Size(507, 23);
-            this.pbCPU.Style = MetroFramework.MetroColorStyle.Silver;
+            this.pbCPU.Size = new System.Drawing.Size(538, 23);
+            this.pbCPU.Style = MetroFramework.MetroColorStyle.Blue;
             this.pbCPU.TabIndex = 32;
             this.pbCPU.Visible = false;
             // 
@@ -80,60 +84,60 @@
             // 
             this.lblPorcentajeRAM.AutoSize = true;
             this.lblPorcentajeRAM.BackColor = System.Drawing.Color.Teal;
-            this.lblPorcentajeRAM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPorcentajeRAM.Location = new System.Drawing.Point(619, 135);
+            this.lblPorcentajeRAM.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblPorcentajeRAM.ForeColor = System.Drawing.Color.Black;
+            this.lblPorcentajeRAM.Location = new System.Drawing.Point(642, 132);
             this.lblPorcentajeRAM.Name = "lblPorcentajeRAM";
-            this.lblPorcentajeRAM.Size = new System.Drawing.Size(27, 19);
+            this.lblPorcentajeRAM.Size = new System.Drawing.Size(29, 19);
             this.lblPorcentajeRAM.Style = MetroFramework.MetroColorStyle.Teal;
             this.lblPorcentajeRAM.TabIndex = 31;
             this.lblPorcentajeRAM.Text = "0%";
             this.lblPorcentajeRAM.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.lblPorcentajeRAM.UseStyleColors = true;
             this.lblPorcentajeRAM.Visible = false;
             // 
             // lblPorcentajeCPU
             // 
             this.lblPorcentajeCPU.AutoSize = true;
             this.lblPorcentajeCPU.BackColor = System.Drawing.Color.Teal;
-            this.lblPorcentajeCPU.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblPorcentajeCPU.Location = new System.Drawing.Point(619, 103);
+            this.lblPorcentajeCPU.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblPorcentajeCPU.ForeColor = System.Drawing.Color.Black;
+            this.lblPorcentajeCPU.Location = new System.Drawing.Point(642, 103);
             this.lblPorcentajeCPU.Name = "lblPorcentajeCPU";
-            this.lblPorcentajeCPU.Size = new System.Drawing.Size(27, 19);
+            this.lblPorcentajeCPU.Size = new System.Drawing.Size(29, 19);
             this.lblPorcentajeCPU.Style = MetroFramework.MetroColorStyle.Teal;
             this.lblPorcentajeCPU.TabIndex = 30;
             this.lblPorcentajeCPU.Text = "0%";
             this.lblPorcentajeCPU.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.lblPorcentajeCPU.UseStyleColors = true;
             this.lblPorcentajeCPU.Visible = false;
             // 
             // lblRAM
             // 
             this.lblRAM.AutoSize = true;
             this.lblRAM.BackColor = System.Drawing.Color.Teal;
-            this.lblRAM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRAM.Location = new System.Drawing.Point(65, 135);
+            this.lblRAM.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblRAM.ForeColor = System.Drawing.Color.Black;
+            this.lblRAM.Location = new System.Drawing.Point(33, 132);
             this.lblRAM.Name = "lblRAM";
-            this.lblRAM.Size = new System.Drawing.Size(38, 19);
+            this.lblRAM.Size = new System.Drawing.Size(41, 19);
             this.lblRAM.Style = MetroFramework.MetroColorStyle.Teal;
             this.lblRAM.TabIndex = 29;
             this.lblRAM.Text = "RAM";
             this.lblRAM.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.lblRAM.UseStyleColors = true;
             this.lblRAM.Visible = false;
             // 
             // lblCPU
             // 
             this.lblCPU.AutoSize = true;
             this.lblCPU.BackColor = System.Drawing.Color.Teal;
-            this.lblCPU.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCPU.Location = new System.Drawing.Point(65, 107);
+            this.lblCPU.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblCPU.ForeColor = System.Drawing.Color.Black;
+            this.lblCPU.Location = new System.Drawing.Point(33, 107);
             this.lblCPU.Name = "lblCPU";
-            this.lblCPU.Size = new System.Drawing.Size(35, 19);
+            this.lblCPU.Size = new System.Drawing.Size(37, 19);
             this.lblCPU.Style = MetroFramework.MetroColorStyle.Teal;
             this.lblCPU.TabIndex = 28;
             this.lblCPU.Text = "CPU";
             this.lblCPU.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.lblCPU.UseStyleColors = true;
             this.lblCPU.Visible = false;
             // 
             // dgvProceso
@@ -231,6 +235,7 @@
             this.btnGrafica.TabIndex = 2;
             this.btnGrafica.Text = "Grafica CPU y RAM";
             this.btnGrafica.UseVisualStyleBackColor = false;
+            this.btnGrafica.Click += new System.EventHandler(this.btnGrafica_Click);
             // 
             // btnFinalizar
             // 
@@ -243,6 +248,7 @@
             this.btnFinalizar.TabIndex = 1;
             this.btnFinalizar.Text = "Finalizar Proceso";
             this.btnFinalizar.UseVisualStyleBackColor = false;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // btnVer
             // 
@@ -255,6 +261,7 @@
             this.btnVer.TabIndex = 0;
             this.btnVer.Text = "Visualizar Procesos";
             this.btnVer.UseVisualStyleBackColor = false;
+            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
             // 
             // grafica
             // 
@@ -283,6 +290,18 @@
             this.grafica.TabIndex = 34;
             this.grafica.Text = "grafica";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 3000;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Location = new System.Drawing.Point(23, 92);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(659, 384);
+            this.panel2.TabIndex = 35;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +316,7 @@
             this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.dgvProceso);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "Form1";
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "ADMINISTRADOR DE PROCESOS";
@@ -331,6 +351,9 @@
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.DataVisualization.Charting.Chart grafica;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
