@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pbRAM = new MetroFramework.Controls.MetroProgressBar();
             this.pbCPU = new MetroFramework.Controls.MetroProgressBar();
             this.lblPorcentajeRAM = new MetroFramework.Controls.MetroLabel();
@@ -51,10 +52,10 @@
             this.btnGrafica = new System.Windows.Forms.Button();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.btnVer = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.grafica = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProceso)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grafica)).BeginInit();
             this.SuspendLayout();
             // 
             // pbRAM
@@ -151,18 +152,18 @@
             this.dgvProceso.Location = new System.Drawing.Point(23, 63);
             this.dgvProceso.Name = "dgvProceso";
             this.dgvProceso.ReadOnly = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvProceso.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvProceso.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProceso.Size = new System.Drawing.Size(659, 413);
             this.dgvProceso.TabIndex = 27;
             // 
             // col1
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.col1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.col1.DefaultCellStyle = dataGridViewCellStyle1;
             this.col1.HeaderText = "# Proceso";
             this.col1.Name = "col1";
             this.col1.ReadOnly = true;
@@ -255,29 +256,39 @@
             this.btnVer.Text = "Visualizar Procesos";
             this.btnVer.UseVisualStyleBackColor = false;
             // 
-            // chart1
+            // grafica
             // 
-            this.chart1.BackColor = System.Drawing.Color.Teal;
+            this.grafica.BackColor = System.Drawing.Color.Teal;
+            chartArea1.BackColor = System.Drawing.Color.PowderBlue;
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.grafica.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(34, 165);
-            this.chart1.Name = "chart1";
+            this.grafica.Legends.Add(legend1);
+            this.grafica.Location = new System.Drawing.Point(34, 165);
+            this.grafica.Name = "grafica";
+            this.grafica.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series1.BorderWidth = 3;
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(636, 300);
-            this.chart1.TabIndex = 34;
-            this.chart1.Text = "chart1";
+            series1.Name = "CPU";
+            series2.BorderWidth = 3;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "RAM";
+            this.grafica.Series.Add(series1);
+            this.grafica.Series.Add(series2);
+            this.grafica.Size = new System.Drawing.Size(636, 300);
+            this.grafica.TabIndex = 34;
+            this.grafica.Text = "grafica";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 488);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.grafica);
             this.Controls.Add(this.pbRAM);
             this.Controls.Add(this.pbCPU);
             this.Controls.Add(this.lblPorcentajeRAM);
@@ -293,7 +304,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProceso)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grafica)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,7 +330,7 @@
         private System.Windows.Forms.Button btnGrafica;
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Button btnVer;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart grafica;
     }
 }
 
