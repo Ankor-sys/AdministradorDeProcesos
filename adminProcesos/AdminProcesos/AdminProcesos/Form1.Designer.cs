@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pbRAM = new MetroFramework.Controls.MetroProgressBar();
             this.pbCPU = new MetroFramework.Controls.MetroProgressBar();
             this.lblPorcentajeRAM = new MetroFramework.Controls.MetroLabel();
@@ -156,18 +156,18 @@
             this.dgvProceso.Location = new System.Drawing.Point(23, 63);
             this.dgvProceso.Name = "dgvProceso";
             this.dgvProceso.ReadOnly = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvProceso.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvProceso.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvProceso.Size = new System.Drawing.Size(659, 413);
             this.dgvProceso.TabIndex = 27;
             // 
             // col1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.col1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.col1.DefaultCellStyle = dataGridViewCellStyle5;
             this.col1.HeaderText = "# Proceso";
             this.col1.Name = "col1";
             this.col1.ReadOnly = true;
@@ -266,26 +266,26 @@
             // grafica
             // 
             this.grafica.BackColor = System.Drawing.Color.Teal;
-            chartArea1.BackColor = System.Drawing.Color.PowderBlue;
-            chartArea1.Name = "ChartArea1";
-            this.grafica.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.grafica.Legends.Add(legend1);
+            chartArea3.BackColor = System.Drawing.Color.PowderBlue;
+            chartArea3.Name = "ChartArea1";
+            this.grafica.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.grafica.Legends.Add(legend3);
             this.grafica.Location = new System.Drawing.Point(34, 165);
             this.grafica.Name = "grafica";
             this.grafica.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.BorderWidth = 3;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "CPU";
-            series2.BorderWidth = 3;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "RAM";
-            this.grafica.Series.Add(series1);
-            this.grafica.Series.Add(series2);
+            series5.BorderWidth = 3;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.Name = "CPU";
+            series6.BorderWidth = 3;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.Name = "RAM";
+            this.grafica.Series.Add(series5);
+            this.grafica.Series.Add(series6);
             this.grafica.Size = new System.Drawing.Size(636, 300);
             this.grafica.TabIndex = 34;
             this.grafica.Text = "grafica";
@@ -317,6 +317,7 @@
             this.Controls.Add(this.dgvProceso);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "ADMINISTRADOR DE PROCESOS";
