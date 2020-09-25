@@ -19,6 +19,7 @@ namespace AdminProcesos
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void ActualizarTabla() {
